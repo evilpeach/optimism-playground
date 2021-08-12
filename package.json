@@ -12,6 +12,7 @@
     "migrate:ovm": "truffle migrate --skip-dry-run --config truffle-config.ovm.js --network $npm_config_network",
     "test:evm": "truffle test",
     "test:ovm": "truffle test --config truffle-config.ovm.js --network $npm_config_network",
+    "execute:ovm": "truffle exec interact.js --config truffle-config.ovm.js --network=optimistic_kovan",
     "flattener:ovm": "truffle-flattener contracts/optimism/SimpleStorage.sol | pbcopy && echo 'Already save on clipboard'"
   },
   "repository": {
