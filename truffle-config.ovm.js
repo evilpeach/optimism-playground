@@ -84,6 +84,20 @@ module.exports = {
         );
       },
     },
+    omgx_rinkeby: {
+      provider: function () {
+        return new HDWalletProvider({
+          mnemonic: {
+            phrase: kovanMnemonic
+          },
+          providerOrUrl: 'http://rinkeby.omgx.network'
+        })
+      },
+      network_id: 28,
+      host: 'http://rinkeby.omgx.network',
+      gasPrice: 15000000,
+      gas: 11000000,
+    }
   },
 
   mocha: {
